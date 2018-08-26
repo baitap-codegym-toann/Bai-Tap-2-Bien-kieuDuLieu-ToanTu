@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Điểm TB</title>
+</head>
+<body>
+<h1>Nhập điểm vào đây</h1>
+<form action="#">
+    <ul>
+        <li>Vật Lý:<br /><label for="ly"></label><input type="number" id="ly"></li>
+        <li>Hóa Học:<br /><label for="Toan"></label><input type="number" id="Toan"></li>
+        <li>Sinh Học:<br /><label for="Sinh"></label><input type="number" id="Sinh"></li>
+    </ul>
+</form>
+<button type="button" onclick="buttonn()">tính điểm</button>
+<h3>Điểm trung bình là: <output id="out"></output> </h3>
+<script>
+    function buttonn() {
+        let a = document.getElementById("ly").value;a=parseFloat(a);
+        let b = document.getElementById("Toan").value;b=parseFloat(b);
+        let c = document.getElementById("Sinh").value;c=parseFloat(c);
+        document.getElementById("out").innerHTML = ((a+b+c)/3);
+    }
+</script>
+
+</body>
+</html>
